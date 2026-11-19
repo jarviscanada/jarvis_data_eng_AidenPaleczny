@@ -41,6 +41,8 @@ The project was built in 4 stages. First the database was provisioned and set up
 
 Cluster:
 
+![Cluster architecture](assets/architecture.png)
+
 Every host in the cluster runs the same 2 agent scripts. One host runs the postgreSQL container, and all the other agents send their data to it over the network. host_info.sh runs once when a host is set up. host_usage.sh is run every minute througfh cron.
 
 #### Scripts
